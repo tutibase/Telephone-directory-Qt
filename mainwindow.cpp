@@ -63,7 +63,7 @@ void MainWindow::on_addButton_clicked()
     connect(dateEdit, SIGNAL(dateChanged(QDate)), tmpItem, SLOT(setTextSlot(QDate)));
 }
 
-
+// Необходимо заменить путь к файлу на собственный
 void MainWindow::on_writeButton_clicked()
 {
     QFile file("C:/Qt/projects/lab8_3sem/datebase1.txt");
@@ -103,7 +103,7 @@ void MainWindow::on_writeButton_clicked()
     file.close();
 }
 
-
+// Необходимо заменить путь к файлу на собственный
 void MainWindow::on_readButton_clicked()
 {
     QFile file("C:/Qt/projects/lab8_3sem/datebase1.txt");
